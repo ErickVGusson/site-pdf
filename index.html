@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilização única na impressão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="fora-do-pdf">
+
+        <p>smilinguidos</p>
+
+        <ul>
+
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+
+        </ul>
+        
+    </nav>
+    
+    <hr>
+
+    <main class="pdf">
+
+        <fieldset> <legend>Texto daora</legend>
+
+            <header>
+
+                <h1 class="fora-do-pdf">
+                    Algo simples
+                </h1>
+    
+                <h1 class="apenas-no-pdf">
+                    Mas legal
+                </h1>
+    
+                <p>
+                    Isso funciona com um metodo de configurar quais coisas que vão aparecer no pdf usando o @media print
+                </p>
+    
+            </header>
+    
+            <hr>
+    
+            <div class="colunas">
+                
+                <div class="coluna-esquerda">
+    
+                    <img src="Smilinguido depois da trembo.jpg" alt="">
+    
+                </div>
+    
+                <hr>
+        
+                <div class="coluna-direita">
+        
+                    <h2>
+                        Smilinguido depois da Trembo
+                    </h2>
+        
+                    <p>
+                        "Sou um homem simples que busca espalhar a palavra de deus na base da porrada"<br>
+                        - Smilinguido
+                        <hr>
+                    </p>
+        
+                </div>
+    
+            </div>
+    
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores autem at quod aspernatur omnis quo exercitationem dolore modi vitae, quasi fuga ipsum illum facilis perspiciatis id ab perferendis possimus nam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, excepturi mollitia? Officiis exercitationem corporis animi temporibus illum nisi consequuntur mollitia esse et quia voluptas, facere numquam vitae nulla tempora vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, distinctio. Autem, earum. Perferendis ipsum deserunt esse. Adipisci repudiandae ipsam eos dolores corrupti pariatur quasi. Hic ut nulla provident quas dicta.
+    
+            <br><br>
+    
+            <button class="fora-do-pdf">
+                Imprima com Ctrl + P
+            </button>
+
+        </fieldset>
+
+
+    </main>
+
+</body>
+
+</html>

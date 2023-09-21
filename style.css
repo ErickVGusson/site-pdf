@@ -1,0 +1,64 @@
+body {
+    margin: 0 auto;
+    width: 75vw;
+}
+
+nav, ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+
+h1, h2 {
+    color: red;
+}
+
+.apenas-no-pdf {
+    display: none;
+}
+
+.colunas {
+    display: flex;
+}
+
+@media screen and (max-width:600px) {
+    .colunas{
+        display: block;
+    }
+}
+
+/* Estilos para a impressão */
+@media print {
+    body {
+    font-size: 12px; /* Tamanho menor de fonte para economizar tinta/papel */
+    color: #000; /* Cor padrão para impressão */
+    }
+
+    .colunas {
+        display: block;
+    }
+
+    img {
+        width: 100px;
+    }
+    /* Ocultar elementos que não devem ser impressos, como botões interativos */
+    .fora-do-pdf {
+    display: none;
+    }
+
+    .apenas-no-pdf {
+        display: block;
+    }
+
+    /* Incluir informações adicionais para impressão, como URL da página */
+    .print-footer::after {
+    content: "Imprimir a partir de: " attr(href);
+    display: block;
+    font-size: 10px;
+    color: #777;
+    }
+   }
